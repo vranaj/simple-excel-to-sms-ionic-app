@@ -1,0 +1,7 @@
+{
+  "name": "exceltosms",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

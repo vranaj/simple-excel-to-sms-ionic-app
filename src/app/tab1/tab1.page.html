@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      upload excel and send sms
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <img src="/assets/shapes.svg" alt="" />
+      <ion-card-header>
+        <input type="file" (change)="onFileChange($event)" multiple="false" />
+        <!--<ion-butsendSmsToSelectedNumberton (click)="sendSms()">send</ion-butsendSmsToSelectedNumberton>-->
+        <!--<ion-button (click)="checkSimPermission()">check sim permission</ion-button>-->
+
+      </ion-card-header>
+      <ion-card-content>
+        <form >
+          <ion-item *ngFor="let control of formControls; let i = index;">
+            <ion-input [placeholder]="control.label" type="text" name="text_{{control.text}}" [(ngModel)]="formControls[i].value"></ion-input>
+          </ion-item>
+
+          <ion-button expand="block" color="primary" (click)="formSubmit()">
+            Send
+          </ion-button>
+        </form>
+
+        <table class="table table-responsive">
+          <tr *ngFor="let row of data">
+            <td *ngFor="let val of row" width="50%" style="padding:2px;">
+              {{val}}
+            </td>
+          </tr>
+        </table>
+
+        <!--<ion-grid>-->
+        <!--<ion-row *ngFor="let row of data">-->
+        <!--<ion-col *ngFor="let val of row" size="6">-->
+        <!--{{val}}-->
+        <!--</ion-col>-->
+        <!--</ion-row>-->
+        <!--</ion-grid>-->
+
+      </ion-card-content>
+    </ion-card>
+
+</ion-content>
