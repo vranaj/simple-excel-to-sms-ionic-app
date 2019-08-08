@@ -8,8 +8,6 @@
 
 
 ## sample excel format
-==============
-
 excel heading -    Contact number  /	Name	/ text1 / text2 / text3.....
 
 excel rows    -    2135648791      / sample name / test1 / test2 / test3......
