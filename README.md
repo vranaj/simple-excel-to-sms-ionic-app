@@ -7,7 +7,7 @@
 * send sms to the random number of rows
 
 
-##sample excel format
+## sample excel format
 ==============
 excel heading -    Contact number  /	Name	/ text1 / text2 / text3.....
 
