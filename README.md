@@ -6,6 +6,9 @@
 * format message for random number of columns in excel sheet 
 * send sms to the random number of rows
 
+## to run
+* pull -> npm i -> ionic serve
+
 ## sample excel format
 excel heading -    Contact number  /	Name	/ text1 / text2 / text3.....
 
